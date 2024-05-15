@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: #555;
+}

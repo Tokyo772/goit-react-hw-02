@@ -2,7 +2,7 @@ import Description from "../Description/Description";
 import Feedback from "../Feedback/Feedback";
 import Options from "../Options/Options";
 import Notification from "../Notification/Notification";
-import "./App.css";
+import style from "./App.module.css";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
     window.localStorage.setItem("user-response", JSON.stringify(response));
   }, [response]);
   return (
-    <>
+    <div className={style.container}>
       <Description></Description>
       <Options
         onFeedback={updateFeedback}
@@ -55,7 +55,7 @@ function App() {
       ) : (
         <Notification />
       )}
-    </>
+    </div>
   );
 }
 

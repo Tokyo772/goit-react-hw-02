@@ -1,0 +1,31 @@
+.summary {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.item {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.value {
+  font-weight: normal;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.total {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #dc3545; /* Колір для виділення */
+}
+
+.percent {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555; /* Нейтральний колір */
+}
