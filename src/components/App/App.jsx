@@ -34,6 +34,11 @@ function App() {
     });
   };
 
+  const positiveFeedback =
+    totalFeedback === 0
+      ? 100
+      : 100 - Math.round((response.bad / totalFeedback) * 100);
+
   useEffect(() => {
     window.localStorage.setItem("user-response", JSON.stringify(response));
   }, [response]);
@@ -51,6 +56,7 @@ function App() {
           neutral={response.neutral}
           bad={response.bad}
           total={totalFeedback}
+          percent={positiveFeedback}
         ></Feedback>
       ) : (
         <Notification />
