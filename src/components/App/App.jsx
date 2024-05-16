@@ -34,10 +34,7 @@ function App() {
     });
   };
 
-  const positiveFeedback =
-    totalFeedback === 0
-      ? 100
-      : 100 - Math.round((response.bad / totalFeedback) * 100);
+  const positiveFeedback = Math.round((response.good / totalFeedback) * 100);
 
   useEffect(() => {
     window.localStorage.setItem("user-response", JSON.stringify(response));
